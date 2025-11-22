@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Smart Campus Management System - A centralized platform for campus announcements, events, clubs, and student activities." />
+  
+  <title>SCMS - Smart Campus Management System</title>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/global.css" />
+</head>
+<body>
+  <!-- ========== HEADER / NAVIGATION ========== -->
+  <header class="navbar">
+    <div class="nav-left">
+      <span class="logo">SCMS</span>
+    </div>
+
+    <!-- Mobile Navigation Toggle -->
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">&#9776;</button>
+
+    <!-- Main Navigation Links -->
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="index.html" class="active">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="announcements.html">Announcements</a>
+      <a href="events.html">Events</a>
+      <a href="clubs.html">Clubs</a>
+    </nav>
+
+    <!-- Theme Toggle -->
+    <div class="nav-right">
+      <button id="themeToggle" class="btn-secondary" aria-label="Toggle theme">&#127763;</button>
+    </div>
+  </header>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <!-- Hero Text Content -->
+      <div class="hero-text">
+        <h1>Smart Campus Management System</h1>
+        <p>
+          A centralized platform for campus announcements, events, clubs,
+          and student activities, built using HTML, CSS, and JavaScript.
+        </p>
+        <a href="dashboard.html" class="btn-primary">Go to Dashboard</a>
+      </div>
+
+      <!-- Hero Feature Cards -->
+      <div class="hero-panel">
+        <div class="hero-card">
+          <h3>Announcements</h3>
+          <p>Stay updated with the latest academic and campus updates.</p>
+        </div>
+
+        <div class="hero-card">
+          <h3>Events</h3>
+          <p>Discover upcoming events and activities around campus.</p>
+        </div>
+
+        <div class="hero-card">
+          <h3>Clubs</h3>
+          <p>Explore student clubs, join communities, and get involved.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Smart Campus Management System</p>
+  </footer>
+
+  <!-- ========== GLOBAL COMPONENTS ========== -->
+  <!-- Toast Notification Container -->
+  <div id="toastContainer" class="toast-container" aria-live="polite"></div>
+
+  <!-- ========== SCRIPTS ========== -->
+  <script src="js/storage.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

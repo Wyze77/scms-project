@@ -1,0 +1,13 @@
+/* ================================================
+   SCMS - Events Page Styles
+   Styling specific to events.html
+   ================================================ */
+
+   #eventsList .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    color: var(--muted-text);
+    margin-top: 0.5rem;
+  }

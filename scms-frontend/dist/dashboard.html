@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SCMS Dashboard - View your saved announcements, registered events, and joined clubs." />
+  
+  <title>SCMS - Dashboard</title>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/dashboard.css" />
+</head>
+<body>
+  <!-- ========== HEADER / NAVIGATION ========== -->
+  <header class="navbar">
+    <div class="nav-left">
+      <span class="logo">SCMS</span>
+    </div>
+
+    <!-- Mobile Navigation Toggle -->
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">&#9776;</button>
+
+    <!-- Main Navigation Links -->
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="dashboard.html" class="active">Dashboard</a>
+      <a href="announcements.html">Announcements</a>
+      <a href="events.html">Events</a>
+      <a href="clubs.html">Clubs</a>
+    </nav>
+
+    <!-- Theme Toggle -->
+    <div class="nav-right">
+      <button id="themeToggle" class="btn-secondary" aria-label="Toggle theme">&#127763;</button>
+    </div>
+  </header>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="container dashboard">
+    <!-- Dashboard Header -->
+    <section class="dashboard-header">
+      <h1 id="dashboardGreeting">Welcome, Student</h1>
+      <p>Here's a quick overview of your campus activity.</p>
+    </section>
+
+    <!-- Dashboard Grid -->
+    <section class="dashboard-grid">
+      <!-- Saved Announcements Card -->
+      <div class="dash-card">
+        <h2>Saved Announcements</h2>
+        <div id="savedAnnouncementsList" class="list-container small-list">
+          <!-- Populated dynamically by dashboard.js -->
+        </div>
+        <a href="announcements.html" class="link-small">View all announcements &rarr;</a>
+      </div>
+
+      <!-- Registered Events Card -->
+      <div class="dash-card">
+        <h2>Registered Events</h2>
+        <div id="registeredEventsList" class="list-container small-list">
+          <!-- Populated dynamically by dashboard.js -->
+        </div>
+        <a href="events.html" class="link-small">View all events &rarr;</a>
+      </div>
+
+      <!-- Joined Clubs Card -->
+      <div class="dash-card">
+        <h2>Joined Clubs</h2>
+        <div id="joinedClubsList" class="list-container small-list">
+          <!-- Populated dynamically by dashboard.js -->
+        </div>
+        <a href="clubs.html" class="link-small">Browse all clubs &rarr;</a>
+      </div>
+
+      <!-- Quick Settings Card -->
+      <div class="dash-card">
+        <h2>Quick Settings</h2>
+        
+        <!-- Display Name Setting -->
+        <label class="field-label" for="usernameInput">Display Name</label>
+        <input 
+          type="text" 
+          id="usernameInput" 
+          class="input" 
+          placeholder="Enter your name"
+          autocomplete="name"
+        />
+        <button id="saveUsernameBtn" class="btn-primary btn-full">Save Name</button>
+
+        <div class="divider"></div>
+
+        <!-- Theme Setting -->
+        <p class="meta-text">Theme</p>
+        <button id="localThemeToggle" class="btn-secondary btn-full">Toggle Dark / Light</button>
+
+        <div class="divider"></div>
+
+        <!-- Last Visited Info -->
+        <p class="meta-text">Last visited page:</p>
+        <p id="lastVisitedDisplay" class="meta-text-muted">Loading...</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Smart Campus Management System</p>
+  </footer>
+
+  <!-- ========== GLOBAL COMPONENTS ========== -->
+  <!-- Toast Notification Container -->
+  <div id="toastContainer" class="toast-container" aria-live="polite"></div>
+
+  <!-- Modal Overlay -->
+  <div id="modalOverlay" class="modal-overlay hidden" role="dialog" aria-modal="true">
+    <div class="modal">
+      <button id="modalClose" class="modal-close" aria-label="Close modal">&times;</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- ========== SCRIPTS ========== -->
+  <script src="js/storage.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SCMS Events - Discover upcoming campus events and activities." />
+  
+  <title>SCMS - Events</title>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/events.css" />
+</head>
+<body>
+  <!-- ========== HEADER / NAVIGATION ========== -->
+  <header class="navbar">
+    <div class="nav-left">
+      <span class="logo">SCMS</span>
+    </div>
+
+    <!-- Mobile Navigation Toggle -->
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">&#9776;</button>
+
+    <!-- Main Navigation Links -->
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="announcements.html">Announcements</a>
+      <a href="events.html" class="active">Events</a>
+      <a href="clubs.html">Clubs</a>
+    </nav>
+
+    <!-- Theme Toggle -->
+    <div class="nav-right">
+      <button id="themeToggle" class="btn-secondary" aria-label="Toggle theme">&#127763;</button>
+    </div>
+  </header>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="container">
+    <!-- Page Header -->
+    <section class="page-header">
+      <h1>Campus Events</h1>
+      <p>Discover what's happening around campus.</p>
+    </section>
+
+    <!-- Search and Filter Controls -->
+    <section class="filters" role="search">
+      <input 
+        type="text" 
+        id="eventSearchInput" 
+        class="input" 
+        placeholder="Search events..."
+        aria-label="Search events"
+      />
+      <select id="eventCategoryFilter" class="input" aria-label="Filter by category">
+        <option value="all">All categories</option>
+        <option value="Workshop">Workshop</option>
+        <option value="Competition">Competition</option>
+        <option value="Seminar">Seminar</option>
+        <option value="Social">Social</option>
+      </select>
+    </section>
+
+    <!-- Events List -->
+    <section id="eventsList" class="card-grid" aria-label="Events list">
+      <!-- Populated dynamically by events.js -->
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Smart Campus Management System</p>
+  </footer>
+
+  <!-- ========== GLOBAL COMPONENTS ========== -->
+  <!-- Toast Notification Container -->
+  <div id="toastContainer" class="toast-container" aria-live="polite"></div>
+
+  <!-- Modal Overlay -->
+  <div id="modalOverlay" class="modal-overlay hidden" role="dialog" aria-modal="true">
+    <div class="modal">
+      <button id="modalClose" class="modal-close" aria-label="Close modal">&times;</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- ========== SCRIPTS ========== -->
+  <script src="js/storage.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/events.js"></script>
+</body>
+</html>

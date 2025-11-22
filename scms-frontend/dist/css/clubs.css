@@ -1,0 +1,9 @@
+/* ================================================
+   SCMS - Clubs Page Styles
+   Styling specific to clubs.html
+   ================================================ */
+
+   .club-meta {
+    font-size: 0.8rem;
+    color: var(--muted-text);
+  }

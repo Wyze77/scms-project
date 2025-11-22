@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SCMS Clubs - Find student clubs and organizations to join." />
+  
+  <title>SCMS - Clubs</title>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/clubs.css" />
+</head>
+<body>
+  <!-- ========== HEADER / NAVIGATION ========== -->
+  <header class="navbar">
+    <div class="nav-left">
+      <span class="logo">SCMS</span>
+    </div>
+
+    <!-- Mobile Navigation Toggle -->
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">&#9776;</button>
+
+    <!-- Main Navigation Links -->
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="announcements.html">Announcements</a>
+      <a href="events.html">Events</a>
+      <a href="clubs.html" class="active">Clubs</a>
+    </nav>
+
+    <!-- Theme Toggle -->
+    <div class="nav-right">
+      <button id="themeToggle" class="btn-secondary" aria-label="Toggle theme">&#127763;</button>
+    </div>
+  </header>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="container">
+    <!-- Page Header -->
+    <section class="page-header">
+      <h1>Student Clubs &amp; Organizations</h1>
+      <p>Find your community and get involved on campus.</p>
+    </section>
+
+    <!-- Search and Filter Controls -->
+    <section class="filters" role="search">
+      <input 
+        type="text" 
+        id="clubSearchInput" 
+        class="input" 
+        placeholder="Search clubs..."
+        aria-label="Search clubs"
+      />
+      <select id="clubCategoryFilter" class="input" aria-label="Filter by category">
+        <option value="all">All categories</option>
+        <option value="Tech">Tech</option>
+        <option value="Sports">Sports</option>
+        <option value="Arts">Arts</option>
+        <option value="Community">Community</option>
+      </select>
+    </section>
+
+    <!-- Clubs List -->
+    <section id="clubsList" class="card-grid" aria-label="Clubs list">
+      <!-- Populated dynamically by clubs.js -->
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Smart Campus Management System</p>
+  </footer>
+
+  <!-- ========== GLOBAL COMPONENTS ========== -->
+  <!-- Toast Notification Container -->
+  <div id="toastContainer" class="toast-container" aria-live="polite"></div>
+
+  <!-- Modal Overlay -->
+  <div id="modalOverlay" class="modal-overlay hidden" role="dialog" aria-modal="true">
+    <div class="modal">
+      <button id="modalClose" class="modal-close" aria-label="Close modal">&times;</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- ========== SCRIPTS ========== -->
+  <script src="js/storage.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/clubs.js"></script>
+</body>
+</html>
