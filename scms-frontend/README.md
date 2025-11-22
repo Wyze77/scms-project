@@ -129,5 +129,4 @@ Potential upgrades:
 ## Team Members
 
 - LINH RATH HENRY
-
-- SYNA SOKUNKETENA
+-SYNA SOKUNKETENA.
