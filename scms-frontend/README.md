@@ -128,12 +128,6 @@ Potential upgrades:
 
 ## Team Members
 
-(Add your group names)
+- LINH RATH HENRY
 
-- Student 1  
-- Student 2  
-- Student 3  
-
-## License
-
-MIT License
+- SYNA SOKUNKETENA
