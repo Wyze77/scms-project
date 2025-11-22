@@ -1,7 +1,4 @@
-/* ================================================
-   SCMS - Shared Components & Utilities
-   Theme toggling, toasts, modals, and navigation
-   ================================================ */
+
 
 /* ================== Theme Management ================== */
 

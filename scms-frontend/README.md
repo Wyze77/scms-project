@@ -99,7 +99,7 @@ Copy code
 ## Installation & Setup
 
 1. Download or clone the project
-git clone <your-repo-url>
+git clone <url>
 markdown
 Copy code
 2. Open the project in an editor

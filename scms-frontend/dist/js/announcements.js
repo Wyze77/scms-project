@@ -1,9 +1,3 @@
-/* ================================================
-   SCMS - Announcements Page Script
-   Browse, filter, and save campus announcements
-   ================================================ */
-
-/* ================== Announcements Data ================== */
 
 const ANNOUNCEMENTS_DATA = [
     {

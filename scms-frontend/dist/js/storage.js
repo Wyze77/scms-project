@@ -1,12 +1,4 @@
-/* ================================================
-   SCMS - Storage Utility Module
-   Handles all localStorage operations with error handling
-   ================================================ */
 
-/**
- * Storage Keys Constants
- * Centralized key definitions for localStorage
- */
 const SCMS_KEYS = {
     USERNAME: "scms_username",
     THEME: "scms_theme",

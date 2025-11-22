@@ -1,8 +1,3 @@
-/* ================================================
-   SCMS - Dashboard Page Script
-   User profile management and saved items display
-   ================================================ */
-
 /* ================== Mock Data ================== */
 
 const MOCK_ANNOUNCEMENTS = [

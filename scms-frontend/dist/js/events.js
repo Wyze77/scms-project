@@ -1,8 +1,3 @@
-/* ================================================
-   SCMS - Events Page Script
-   Browse, filter, and register for campus events
-   ================================================ */
-
 /* ================== Events Data ================== */
 
 const EVENTS_DATA = [

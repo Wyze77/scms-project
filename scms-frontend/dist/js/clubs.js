@@ -1,5 +1,3 @@
-
-
 const CLUBS_DATA = [
     {
       id: 1,
